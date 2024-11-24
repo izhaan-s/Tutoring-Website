@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Profile - Budgie Tutors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .profile-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+        }
+
+        .profile-header {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            flex-grow: 1;
+        }
+
+        .profile-name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #002147;
+        }
+
+        .profile-university {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            color: #388E3C;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #FFA726;
+            color: white;
+            border-radius: 15px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .request-lesson-btn {
+            background-color: #00A550;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .request-lesson-btn:hover {
+            background-color: #008040;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding: 0 20px;
+        }
+
+        .nav-tab {
+            padding: 15px 0;
+            color: #666;
+            text-decoration: none;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .nav-tab.active {
+            color: #002147;
+        }
+
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #002147;
+        }
+
+        .content-section {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #002147;
+            margin-bottom: 20px;
+        }
+
+        .graduate-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #002147;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="nav-link">GCSE <span class="arrow">▼</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">A Level <span class="arrow">▼</span></a>
+                </li>
+                <li>
+                    <a href="how_it_works.html" class="nav-link">How it works</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="#" class="request-button">Request a tutor</a>
+            <img src="logo.png" alt="Your Tuition Logo" class="logo-image">
+            <P class="slogan">Where finding a tutor has never been easier!</P>
+        </div>
+    </header>
+
+    <!-- Profile Content -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="placeholder-tutor.jpg" alt="Tutor" class="profile-image">
+            <div class="profile-info">
+                <span class="badge">✨ New to the platform</span>
+                <h1 class="profile-name">Shihabul B.</h1>
+                <p class="profile-university">University of Manchester - MEng Electrical & Electronic Engineering</p>
+                <div class="price">£20<span style="font-size: 16px;"> / hour</span></div>
+                <div class="graduate-badge">
+                    ✓ Graduate
+                </div>
+                <div>
+                    <a href="#" class="request-lesson-btn">Request lesson</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-tabs">
+            <a href="#" class="nav-tab active">Biography</a>
+            <a href="#" class="nav-tab">Availability</a>
+            <a href="#" class="nav-tab">Subjects</a>
+            <a href="#" class="nav-tab">Exam boards</a>
+            <a href="#" class="nav-tab">Reviews</a>
+            <a href="#" class="nav-tab">Qualifications</a>
+        </nav>
+
+        <div class="content-section">
+            <h2 class="section-title">About Shihabul</h2>
+            <p>I would like to describe myself as a versatile engineer with proven records of achieving targets in difficult environments in an efficient and organized manner. Having obtained my IET Accredited Master of Engineering (MEng) degree in Electrical and Electronic Engineering with Industrial Experience from the University of Manchester and I am currently looking for an opportunity to combine academic achievements and work experiences in a challenging role within academia by applying a wide range of research skills.</p>
+            
+            <h2 class="section-title">Tutoring Style</h2>
+            <p>As a tutor I intend to establish and maintain regular and timely contact with my students. If required, I can prepare summarised lecture notes, revision lecture presentations and conduct mock examinations. I will proactively assist students in resolving any difficulties, and provide them with one-to-one support, guidance and encouragement. I can also confidently prepare candidates for examinations.</p>
+        </div>
+    </div>
+</body>
+</html> 

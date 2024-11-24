@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCSE Tutors - Budgie Tutors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tutor-section {
+            background-color: #F5F5F5;
+            padding: 40px 0;
+            min-height: 100vh;
+        }
+
+        .page-title {
+            color: #002147;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            padding: 0 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .tutor-card {
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tutor-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .tutor-info {
+            flex-grow: 1;
+        }
+
+        .tutor-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #002147;
+        }
+
+        .tutor-university {
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .tutor-subjects {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .tutor-stats {
+            display: flex;
+            gap: 20px;
+            color: #333333;
+            font-size: 14px;
+        }
+
+        .price-view {
+            text-align: right;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #388E3C;
+        }
+
+        .view-button {
+            background-color: #3F51B5;
+            color: #FFFFFF;
+            padding: 10px 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-button:hover {
+            background-color: #303F9F;
+        }
+
+        .new-badge {
+            color: #FFA726;
+            font-size: 14px;
+        }
+
+        /* Update header styles */
+        .main-header {
+            background-color: #1E3A5F;
+        }
+
+        .nav-link {
+            color: #FFFFFF;
+        }
+
+        .request-button {
+            background-color: transparent;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+        }
+
+        .request-button:hover {
+            background-color: #FFFFFF;
+            color: #1E3A5F;
+        }
+
+        .slogan {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="nav-link">GCSE <span class="arrow">▼</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">A Level <span class="arrow">▼</span></a>
+                </li>
+                <li>
+                    <a href="how_it_works.html" class="nav-link">How it works</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="#" class="request-button">Request a tutor</a>
+            <img src="logo.png" alt="Your Tuition Logo" class="logo-image">
+            <P class="slogan">Where finding a tutor has never been easier! </P>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="tutor-section">
+        <h1 class="page-title">Find a Private GCSE Maths Tutor</h1>
+        
+        <!-- Example Tutor Card -->
+        <div class="tutor-card">
+            <img src="placeholder-tutor.jpg" alt="Tutor" class="tutor-image">
+            <div class="tutor-info">
+                <div class="tutor-name">
+                    John D. <span class="new-badge">✨ New to the platform</span>
+                </div>
+                <div class="tutor-university">
+                    University of Manchester - BSc Mathematics
+                </div>
+                <div class="tutor-subjects">
+                    Maths GCSE/IGCSE - Exam Preparations, Revision Notes and Review Exercises
+                </div>
+                <div class="tutor-stats">
+                    <span>Tutor for 3+ years</span>
+                    <span>Replies in < 24 hours</span>
+                </div>
+            </div>
+            <div class="price-view">
+                <div class="price">£20 <span style="font-size: 16px;">/ hour</span></div>
+                <a href="#" class="view-button">View</a>
+            </div>
+        </div>
+
+        <!-- Add more tutor cards as needed -->
+        
+    </section>
+</body>
+</html> 
