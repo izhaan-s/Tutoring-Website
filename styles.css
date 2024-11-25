@@ -4,6 +4,31 @@ body {
     background-color: white;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -40,13 +65,13 @@ body {
     align-items: center;
     gap: 15px;
     white-space: nowrap;
-    margin-left: auto;
+    margin-left: 200px;
     position: relative;
 }
 
 .request-button {
     position: absolute;
-    right: 475px;
+    right: 560px;
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent;

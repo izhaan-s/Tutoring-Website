@@ -39,6 +39,7 @@
             font-weight: bold;
             margin-bottom: 10px;
             color: #002147;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .profile-university {
@@ -50,16 +51,7 @@
             font-size: 28px;
             font-weight: bold;
             color: #388E3C;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: #FFA726;
-            color: white;
-            border-radius: 15px;
-            font-size: 14px;
-            margin-bottom: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .request-lesson-btn {
@@ -72,6 +64,7 @@
             margin-top: 20px;
             font-weight: bold;
             transition: background-color 0.3s;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .request-lesson-btn:hover {
@@ -84,6 +77,7 @@
             margin-bottom: 30px;
             border-bottom: 1px solid #ddd;
             padding: 0 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .nav-tab {
@@ -92,10 +86,12 @@
             text-decoration: none;
             position: relative;
             font-weight: 500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .nav-tab.active {
             color: #002147;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .nav-tab.active::after {
@@ -110,12 +106,14 @@
 
         .content-section {
             padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .section-title {
             font-size: 24px;
             color: #002147;
             margin-bottom: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .graduate-badge {
@@ -124,7 +122,25 @@
             gap: 5px;
             color: #002147;
             font-weight: 500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
+        .request-button {
+            position: absolute;
+            right: 560px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            padding: 6px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: all 0.3s ease;
+    }
     </style>
 </head>
 <body>
@@ -139,7 +155,7 @@
                     <a href="#" class="nav-link">A Level <span class="arrow">▼</span></a>
                 </li>
                 <li>
-                    <a href="how_it_works.html" class="nav-link">How it works</a>
+                    <a href="how_it_works.html" class="nav-link"><u>How it works</u></a>
                 </li>
             </ul>
         </nav>
@@ -156,12 +172,11 @@
         <div class="profile-header">
             <img src="placeholder-tutor.jpg" alt="Tutor" class="profile-image">
             <div class="profile-info">
-                <span class="badge">✨ New to the platform</span>
-                <h1 class="profile-name">Shihabul B.</h1>
-                <p class="profile-university">University of Manchester - MEng Electrical & Electronic Engineering</p>
-                <div class="price">£20<span style="font-size: 16px;"> / hour</span></div>
+                <h1 class="profile-name">Frankie Gillis</h1>
+                <p class="profile-university">University of St Andrews - BSc Mathematics</p>
+                <div class="price">£25<span style="font-size: 16px;"> / hour</span></div>
                 <div class="graduate-badge">
-                    ✓ Graduate
+                    First year
                 </div>
                 <div>
                     <a href="#" class="request-lesson-btn">Request lesson</a>
@@ -173,8 +188,7 @@
             <a href="#" class="nav-tab active">Biography</a>
             <a href="#" class="nav-tab">Availability</a>
             <a href="#" class="nav-tab">Subjects</a>
-            <a href="#" class="nav-tab">Exam boards</a>
-            <a href="#" class="nav-tab">Reviews</a>
+            <a href="#" class="nav-tab">Reviews and teaching videos</a>
             <a href="#" class="nav-tab">Qualifications</a>
         </nav>
 
