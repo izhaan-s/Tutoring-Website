@@ -5,21 +5,21 @@
 .navbar {
     background: transparent;
     font-family: 'Orbitron';
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 180px; 
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 11.25em; 
 }
 
 .navdiv {
-    margin-top: 10px;
+    margin-top: 0.625em;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo a {
-    margin-left: 15px;
-    font-size: 30px;
+    margin-left: 1em;
+    font-size: 1.9em;
     font-weight: 600;
     color: rgba(45,212,191,255);
 }
@@ -46,7 +46,11 @@ body {
     font-family: 'Merriweather', sans-serif; 
     margin: 0;
     height: 100vh;
+    background-size: cover; /* Prevent scaling */
+    background-attachment: fixed; /* Locks background position */
+    background-position: center; /* Centered background */
 }
+
 
 .heading {
     text-align: center;
@@ -97,37 +101,66 @@ button:hover {
     transform: scale(1.05); 
 }
 
+/* How It Works Section */
 .works {
-    margin-top: 425px;
+    margin-top: 26.6em;
+    background: linear-gradient(135deg, #1a202c, #2d3748); /* Existing darker gradient */
     text-align: center;
+    padding: 6em 0;
 }
 
 .works h1 {
     font-size: 40px;
     font-family: 'Orbitron';
-    color: rgba(45,212,191,255);
+    color: rgba(45, 212, 191, 255);
+    margin-bottom: 2em;
 }
 
-.steps {
+/* Step Items (Flexbox Replacement for Table) */
+.step-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center-align items */
+    gap: 2em; /* Add space between items */
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1200px; /* Limit the width of the container */
+}
+
+.step-item {
+    flex: 1 1 calc(20% - 2em); /* Responsive column width */
+    text-align: center;
+    max-width: 200px; /* Prevent items from growing too large */
+}
+
+/* Responsive Images */
+.step-item img {
+    width: 100%; /* Images scale to the container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center images */
+}
+
+/* Step Title */
+.step-item h2 {
     font-family: 'Orbitron';
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2em;
+    margin-top: 1em;
+    color: rgba(45, 212, 191, 255);
 }
 
-.steptable {
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1500px;
+/* Step Description */
+.step-item p {
+    font-family: 'Merriweather';
+    font-size: 0.9em;
+    color: #ffffff;
+    margin-top: 0.5em;
 }
 
-.step-image{
-    width:200px;
-    height:200px;
-}
 .aboutus {
+    background: linear-gradient(135deg, #1a202c, #2d3748);
     text-align: center;
     padding: 20%;
+    padding-top: 5%;
     padding-bottom: 100px;
     font-size: 20px;
 }
@@ -151,6 +184,7 @@ button:hover {
 }
 
 .testimonials-container {
+    background-color: transparent;
     display: flex;
     gap: 1.5rem; 
     justify-content: center;
@@ -256,7 +290,11 @@ button:hover {
     }
 
     /* Table adjustments for small screens */
+    .step-image{
+        max-width: 8em;
+    }
     .steptable {
+        gap: 1em;
         width: 100%;
         overflow-x: auto; /* Enable horizontal scrolling */
         display: flex;
@@ -297,5 +335,11 @@ button:hover {
 
     .testimonial-box p {
         font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .step-image {
+        max-width: 6em; /* Shrink even more for very small screens */
     }
 }
