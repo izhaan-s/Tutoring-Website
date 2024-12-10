@@ -233,24 +233,37 @@ button:hover {
     }
 
     .navdiv {
-        flex-direction: column;
+        display: flex;
         align-items: center;
+        justify-content: flex-start;
+        margin-top: 10px;
+        overflow-x: auto; /* Allow horizontal scroll if too wide */
+        white-space: nowrap; /* Prevent items from wrapping to next line */
     }
 
     .navdiv ul {
-        flex-direction: column;
+        display: inline-flex; 
         align-items: center;
         gap: 10px;
-        margin-top: 15px;
+        margin: 0;
         padding: 0;
+        white-space: nowrap; 
     }
 
     .navdiv li {
-        margin: 5px 0;
+        display: inline-block;
+        white-space: nowrap;
     }
 
     .navdiv li a, .navdiv li button a {
-        font-size: 16px;
+        font-size: 14px;
+        margin-right: 0;
+        padding: 5px 10px;
+    }
+
+    button {
+        padding: 5px 10px;
+        border-radius: 15px; /* smaller radius can help fit visually */
     }
 
     /* Heading adjustments for smaller screens */
