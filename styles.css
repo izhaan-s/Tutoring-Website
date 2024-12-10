@@ -269,7 +269,7 @@ button:hover {
     
     /* Heading adjustments for smaller screens */
     .logo{
-        font-size: 0;
+        font-size: 0px;
     }
     .stem {
         font-size: 48px;
@@ -359,8 +359,15 @@ button:hover {
     .step-image {
         max-width: 6em; /* Shrink even more for very small screens */
     }
-    .navdiv li a, .navdiv li button a {
-        font-size: 11px;
+
+    .navdiv li a{
+        font-size: 13px;
 
     }
+    .navdiv li button a{
+        display:none;
+    }
+    .navdiv li:last-child {
+        display: none;
+      }
 }
