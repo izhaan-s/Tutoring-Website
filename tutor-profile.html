@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutor Profile - Frankie Gillis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .price {
+            font-size: 24px;
+            color: #4a4a4a;
+            font-weight: bold;
+        }
+        .request-lesson-btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .schedule-container {
+            border: 1px solid #ddd;
+            height: 280px;
+            width: 700px;
+            overflow-y: scroll;
+            margin-top: 20px;
+        }
+        .day {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .datelabel {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .timeslot {
+            background-color: #e6f2ff;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        * {
+    text-decoration: none;
+        }   
+
+        .navbar {
+            background: transparent;
+            font-family: 'Orbitron';
+            padding-right: 1em;
+            padding-left: 1em;
+            padding-bottom: 11.25em; 
+        }
+
+        .navdiv {
+            margin-top: 0.625em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo a {
+            margin-left: 1em;
+            font-size: 1.9em;
+            font-weight: 600;
+            color: rgba(45,212,191,255);
+        }
+
+        li {
+            list-style:none;
+            display: inline-block;
+        }
+
+        li a {
+            color: white;
+            font-size: 15px;
+            font-family: 'Merriweather';
+            margin-right: 25px;
+        }
+
+        li a:hover {
+            color: rgba(45,212,191,255);
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a202c, #2d3748); /* Dark blue gradient */
+            color: #ffffff;
+            font-family: 'Merriweather', sans-serif; 
+            margin: 0;
+            height: 100vh;
+            background-size: cover; /* Prevent scaling */
+            background-attachment: fixed; /* Locks background position */
+            background-position: center; /* Centered background */
+        }
+
+
+        .heading {
+            text-align: center;
+            padding: 60px 0 20px;
+            margin-top: 20px;
+        }
+
+        .stem {
+            font-size: 95px;
+            font-weight: bold;
+            color: #ffffff; 
+            text-shadow: 0 0 9px #4fd1c5;
+            margin: 0;
+            padding: 15px;
+        } 
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+        <div class="logo"><a href="#">STEM Sphere</a></div>
+            <ul>
+                <li>
+                    <a href="#" class="nav-link">Find a tutor</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">How it works</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li>
+                    <button><a href="#">Request a Tutor</a></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="heading">
+        <h1 class="stem">STEM Sphere</h1>
+        <a>Where finding the right tutor has never been easier!</a>
+        
+    </header>
+
+    <div class="profile-container">
+        <img src="placeholder-tutor.jpg" alt="Tutor" class="profile-image">
+        
+        <div class="profile-info">
+            <h1>Frankie Gillis</h1>
+            <p>University of St Andrews - BSc Mathematics</p>
+            
+            <div class="price">£25 / hour</div>
+            
+            <div class="graduate-badge">First year</div>
+            
+            <a href="#" class="request-lesson-btn">Request lesson</a>
+        </div>
+    </div>
+
+    <h2>About Frankie</h2>
+
+    <section>
+        <h3>Biography</h3>
+        <p>As a tutor I intend to establish and maintain regular and timely contact with my students. If required, I can prepare summarised lecture notes, revision lecture presentations and conduct mock examinations. I will proactively assist students in resolving any difficulties, and provide them with one-to-one support, guidance and encouragement. I can also confidently prepare candidates for examinations.</p>
+    </section>
+
+    <section>
+        <h3>Subjects Offering</h3>
+        <h4>A Levels:</h4>
+        <ul>
+            <li>Mathematics</li>
+            <li>Further Mathematics</li>
+            <li>Physics</li>
+        </ul>
+
+        <h4>Grades Achieved:</h4>
+        <ul>
+            <li>Mathematics: A*</li>
+            <li>Further Mathematics: A*</li>
+            <li>Physics: A*</li>
+        </ul>
+    </section>
+
+    <h3>Available time slots</h3>
+    <div class="schedule-container">
+        <div class="day">
+            <div class="datelabel">Friday<br>August 23</div>
+            <div class="timeslot">9:00am</div>
+            <div class="timeslot">9:30am</div>
+            <div class="timeslot">10:00am</div>
+        </div>
+
+        <div class="day">
+            <div class="datelabel">Saturday<br>August 24</div>
+            <div class="timeslot">10:30pm</div>
+        </div>
+
+        <div class="day">
+            <div class="datelabel">Sunday<br>August 25</div>
+            <div class="timeslot">10:30pm</div>
+        </div>
+
+        <div class="day">
+            <div class="datelabel">Monday<br>August 26</div>
+            <div class="timeslot">10:30pm</div>
+        </div>
+
+        <div class="day">
+            <div class="datelabel">Tuesday<br>August 27</div>
+            <div class="timeslot">10:30pm</div>
+        </div>
+    </div>
+</body>
+</html>
