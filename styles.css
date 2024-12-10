@@ -265,8 +265,12 @@ button:hover {
         padding: 5px 10px;
         border-radius: 15px; /* smaller radius can help fit visually */
     }
-
+    
+    
     /* Heading adjustments for smaller screens */
+    .logo{
+        font-size: 0;
+    }
     .stem {
         font-size: 48px;
         padding: 10px;
@@ -354,5 +358,9 @@ button:hover {
 @media screen and (max-width: 480px) {
     .step-image {
         max-width: 6em; /* Shrink even more for very small screens */
+    }
+    .navdiv li a, .navdiv li button a {
+        font-size: 11px;
+
     }
 }
