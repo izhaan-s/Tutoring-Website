@@ -2,6 +2,8 @@
     text-decoration: none;
 }
 
+
+/* Navbar */
 .navbar {
     background: transparent;
     font-family: 'Orbitron';
@@ -16,6 +18,23 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.nav-toggle{
+    display:none;
+}
+
+.nav-toggle-label{
+    display:none;
+}   
+
+.nav-toggle-label svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+    transition: all 0.3s ease;
+}
+
+
 
 .logo a {
     margin-left: 1em;
@@ -233,9 +252,43 @@ button:hover {
    @media screen and (max-width: 768px) {
 
     /* Navbar adjustments for mobile */
+
+    .navdiv ul {
+        display: none; /* Hide links by default */
+    }
+
     .navbar {
         padding-bottom: 30px;
     }
+
+    .nav-toggle-label{
+        display:block;
+    }   
+    .nav-toggle-label .hamburger {
+        display: block;
+    }
+
+    
+    .nav-toggle:checked + .nav-toggle-label .hamburger {
+        display: none;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label .close {
+        display: block;
+    }
+    
+    .nav-toggle:not(:checked) + .nav-toggle-label .close {
+        display: none;
+    }
+
+
+
+    /* Hide li a elements when the nav-toggle is not checked */
+    .nav-toggle:not(:checked) ~ .navdiv ul {
+        display: none;
+    }
+
+    /* Show li a elements when the nav-toggle is checked */
 
     .navdiv {
         display: flex;
@@ -273,9 +326,7 @@ button:hover {
     
     
     /* Heading adjustments for smaller screens */
-    .logo{
-        font-size: 0px;
-    }
+
     .stem {
         font-size: 48px;
         padding: 10px;
@@ -361,6 +412,17 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
+
+    .navdiv {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+        height: 60px;
+    }
+    .logo a{
+        margin-left: 0px;
+    }
+
     .step-image {
         max-width: 6em; /* Shrink even more for very small screens */
     }
@@ -368,6 +430,27 @@ button:hover {
     .navdiv li a{
         font-size: 13px;
 
+    }
+
+/* Navbar */
+    .navdiv ul {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(26, 32, 44, 0.9); /* Dark background */
+        width: 100%; /* Full width on mobile */
+        padding: 1em;
+        gap: 1em;
+        z-index: 10;
+        list-style: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Show links when the checkbox is checked */
+    .nav-toggle:checked ~ .navdiv ul {
+        display: flex; /* Show the menu */
     }
     .navdiv li button a{
         display:none;
