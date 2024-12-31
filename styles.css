@@ -51,7 +51,7 @@ li {
 li a {
     color: white;
     font-size: 15px;
-    font-family: 'Merriweather';
+    font-family: 'Arial';
     margin-right: 25px;
 }
 
@@ -62,7 +62,7 @@ li a:hover {
 body {
     background: linear-gradient(135deg, #1a202c, #2d3748); /* Dark blue gradient */
     color: #ffffff;
-    font-family: 'Merriweather', sans-serif; 
+    font-family: 'Arial', sans-serif; 
     margin: 0;
     height: 100vh;
     background-size: cover; /* Prevent scaling */
@@ -88,7 +88,7 @@ body {
 
 .heading a {
     font-size: 30px;
-    font-family: 'Merriweather';
+    font-family: 'Arial';
     color: rgba(45,212,191,255);
 }
 
@@ -105,7 +105,7 @@ button {
 }
 
 button a {
-    font-family: 'Merriweather';
+    font-family: 'Arial';
     font-weight: bold;
     color: #1a202c;
     text-align: center;
@@ -174,7 +174,7 @@ button:hover {
 
 /* Step Description */
 .step-item p {
-    font-family: 'Merriweather';
+    font-family: 'Arial';
     font-size: 0.9em;
     color: #ffffff;
     margin-top: 0.5em;
