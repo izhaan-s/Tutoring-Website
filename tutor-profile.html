@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +27,7 @@
         }
         .price {
             font-size: 24px;
-            color: #4a4a4a;
+            color: white;
             font-weight: bold;
         }
         .request-lesson-btn {
@@ -66,22 +67,26 @@
         }
 
         * {
-    text-decoration: none;
+            text-decoration: none;
         }   
+        
+        ul {
+    margin-left: auto; /* Pushes the ul to the right */
+}
 
         .navbar {
             background: transparent;
-            font-family: 'Orbitron';
-            padding-right: 1em;
-            padding-left: 1em;
-            padding-bottom: 11.25em; 
+    font-family: Arial, sans-serif;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 3em;
         }
 
         .navdiv {
             margin-top: 0.625em;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Changed from space-between */
         }
 
         .logo a {
@@ -92,14 +97,14 @@
         }
 
         li {
-            list-style:none;
+            list-style: none;
             display: inline-block;
         }
 
         li a {
             color: white;
             font-size: 15px;
-            font-family: 'Merriweather';
+            font-family: Arial, sans-serif;
             margin-right: 25px;
         }
 
@@ -108,20 +113,20 @@
         }
 
         body {
-            background: linear-gradient(135deg, #1a202c, #2d3748); /* Dark blue gradient */
+            background: linear-gradient(135deg, #1a202c, #2d3748);
             color: #ffffff;
             font-family: 'Merriweather', sans-serif; 
             margin: 0;
-            height: 100vh;
-            background-size: cover; /* Prevent scaling */
-            background-attachment: fixed; /* Locks background position */
-            background-position: center; /* Centered background */
+            min-height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            padding-bottom: 100px; /* Added padding at bottom */
         }
-
 
         .heading {
             text-align: center;
-            padding: 60px 0 20px;
+            padding: 20px 0; /* Reduced from 60px */
             margin-top: 20px;
         }
 
@@ -133,6 +138,11 @@
             margin: 0;
             padding: 15px;
         } 
+
+        .nav-button a {
+    color: #1a202c;
+    margin: 0;
+}
     </style>
 </head>
 <body>
@@ -142,37 +152,30 @@
         <div class="logo"><a href="#">STEM Sphere</a></div>
             <ul>
                 <li>
-                    <a href="#" class="nav-link">Find a tutor</a>
+                    <a href="#" class="nav-link" style="font-family: Arial, Helvetica, sans-serif;">Find a tutor</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">How it works</a>
+                    <a href="#" class="nav-link" style="font-family: Arial, Helvetica, sans-serif;">How it works</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link" style="font-family: Arial, Helvetica, sans-serif;">Contact</a>
                 </li>
                 <li>
-                    <button><a href="#">Request a Tutor</a></button>
+                    <button class="nav-button" style="font-family: Arial, Helvetica, sans-serif;"><a href="#">Request a Tutor</a></button>
                 </li>
             </ul>
         </div>
     </nav>
-    
-    <header class="heading">
-        <h1 class="stem">STEM Sphere</h1>
-        <a>Where finding the right tutor has never been easier!</a>
-        
-    </header>
 
     <div class="profile-container">
         <img src="placeholder-tutor.jpg" alt="Tutor" class="profile-image">
         
         <div class="profile-info">
             <h1>Frankie Gillis</h1>
-            <p>University of St Andrews - BSc Mathematics</p>
+            <p>University of St Andrews - BSc Mathematics 1st year</p>
             
             <div class="price">£25 / hour</div>
             
-            <div class="graduate-badge">First year</div>
             
             <a href="#" class="request-lesson-btn">Request lesson</a>
         </div>
@@ -202,34 +205,5 @@
         </ul>
     </section>
 
-    <h3>Available time slots</h3>
-    <div class="schedule-container">
-        <div class="day">
-            <div class="datelabel">Friday<br>August 23</div>
-            <div class="timeslot">9:00am</div>
-            <div class="timeslot">9:30am</div>
-            <div class="timeslot">10:00am</div>
-        </div>
-
-        <div class="day">
-            <div class="datelabel">Saturday<br>August 24</div>
-            <div class="timeslot">10:30pm</div>
-        </div>
-
-        <div class="day">
-            <div class="datelabel">Sunday<br>August 25</div>
-            <div class="timeslot">10:30pm</div>
-        </div>
-
-        <div class="day">
-            <div class="datelabel">Monday<br>August 26</div>
-            <div class="timeslot">10:30pm</div>
-        </div>
-
-        <div class="day">
-            <div class="datelabel">Tuesday<br>August 27</div>
-            <div class="timeslot">10:30pm</div>
-        </div>
-    </div>
 </body>
-</html>
+</html> 
